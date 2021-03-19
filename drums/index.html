@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="document" lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,8 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>JS Drum Kit - JavaScript 30 Project 1 | JavaScript 30 Projects Solved By Krish Dev DB</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <script src="./scripts/script.js"></script>
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <meta name="description" content="JavaScript Drum Kit. A Javascript30 Project Developed With ❤ By Krish Dev DB" />
   <meta name="robots" content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
   <meta property="og:locale" content="en_US" />
@@ -27,57 +25,58 @@
     <div class="javascript">
   <![endif]-->
   <div class="keys">
-    <div data-key="65" class="key">
+    <div data-key="65" data-letter="A" class="key">
       <kbd class="letter">A</kbd>
       <span class="sound">clap</span>
     </div>
-    <div data-key="83" class="key">
+    <div data-key="83" data-letter="S" class="key">
       <kbd class="letter">S</kbd>
       <span class="sound">hihat</span>
     </div>
-    <div data-key="68" class="key">
+    <div data-key="68" data-letter="D" class="key">
       <kbd class="letter">D</kbd>
       <span class="sound">kick</span>
     </div>
-    <div data-key="70" class="key">
+    <div data-key="70" data-letter="F" class="key">
       <kbd class="letter">F</kbd>
       <span class="sound">openhat</span>
     </div>
-    <div data-key="71" class="key">
+    <div data-key="71" data-letter="G" class="key">
       <kbd class="letter">G</kbd>
       <span class="sound">boom</span>
     </div>
-    <div data-key="72" class="key">
+    <div data-key="72" data-letter="H" class="key">
       <kbd class="letter">H</kbd>
       <span class="sound">ride</span>
     </div>
-    <div data-key="74" class="key">
+    <div data-key="74" data-letter="J" class="key">
       <kbd class="letter">J</kbd>
       <span class="sound">snare</span>
     </div>
-    <div data-key="75" class="key">
+    <div data-key="75" data-letter="K" class="key">
       <kbd class="letter">K</kbd>
       <span class="sound">tom</span>
     </div>
-    <div data-key="76" class="key">
+    <div data-key="76" data-letter="L" class="key">
       <kbd class="letter">L</kbd>
       <span class="sound">tink</span>
     </div>
   </div>
   <div class="audios">
-    <audio data-key="65" src="./audio/clap.mp3"></audio>
-    <audio data-key="83" src="./audio/hihat.mp3"></audio>
-    <audio data-key="68" src="./audio/kick.mp3"></audio>
-    <audio data-key="70" src="./audio/openhat.mp3"></audio>
-    <audio data-key="71" src="./audio/boom.mp3"></audio>
-    <audio data-key="72" src="./audio/ride.mp3"></audio>
-    <audio data-key="74" src="./audio/snare.mp3"></audio>
-    <audio data-key="75" src="./audio/tom.mp3"></audio>
-    <audio data-key="76" src="./audio/tink.mp3"></audio>
+    <audio data-key="65" data-letter="A" src="./audio/clap.mp3"></audio>
+    <audio data-key="83" data-letter="S" src="./audio/hihat.mp3"></audio>
+    <audio data-key="68" data-letter="D" src="./audio/kick.mp3"></audio>
+    <audio data-key="70" data-letter="F" src="./audio/openhat.mp3"></audio>
+    <audio data-key="71" data-letter="G" src="./audio/boom.mp3"></audio>
+    <audio data-key="72" data-letter="H" src="./audio/ride.mp3"></audio>
+    <audio data-key="74" data-letter="J" src="./audio/snare.mp3"></audio>
+    <audio data-key="75" data-letter="K" src="./audio/tom.mp3"></audio>
+    <audio data-key="76" data-letter="L" src="./audio/tink.mp3"></audio>
   </div>
   <!--[if lt IE 7]>
     </div>
   <![endif]-->
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
