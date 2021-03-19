@@ -1,0 +1,34 @@
+{
+  "name": "javascript30-projects",
+  "version": "1.0.0",
+  "description": "Javascript Projects Solved And Enhanced By @krishdevdb",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishdevdb/javascript30-projects.git"
+  },
+  "keywords": [
+    "JS",
+    "JavaScript",
+    "Projects",
+    "Solved",
+    "JavaScript30",
+    "JS30"
+  ],
+  "author": "Krish Dev DB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krishdevdb/javascript30-projects/issues"
+  },
+  "homepage": "https://github.com/krishdevdb/javascript30-projects#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1"
+  }
+}
