@@ -1,28 +1,14 @@
-
-@keyframes highlight {
-  from {
-    transform: scale(1.1);
-    border-color: #ffd700;
-    box-shadow: 0 0 1rem #ffd700;
-  }
-  to {
-    transform: none;
-    border-color: transparent;
-    box-shadow: none;
-  }
-}
-
 .app {
   font-size: 10px;
   background: #1a1a1a bottom center;
-  overflow: hidden;
+  color: #ffffff;
 }
 
 .keys {
   display: flex;
   min-height: 100vh;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .key {
@@ -34,7 +20,6 @@
   transition: all .07s ease;
   width: 10rem;
   text-align: center;
-  color: white;
   background: rgba(0, 0, 0, 0.4);
   text-shadow: 0 0 .5rem black;
 }
@@ -44,16 +29,31 @@
   font-size: 4rem;
 }
 
-.playing {
-  /* animation: highlight 1s; */
-  transform: scale(1.1);
-  border-color: #ffd700;
-  box-shadow: 0 0 1rem #ffd700;
-}
-
 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffd700;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffd700;
+  box-shadow: 0 0 1rem #ffd700;
+  color: #ffd700 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .keys {
+    display: unset;
+    min-height: unset;
+    align-items: unset;
+    justify-content: unset;
+  }
 }
