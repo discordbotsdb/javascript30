@@ -1,12 +1,12 @@
-document.querySelectorAll('.input').forEach((input) => {
+document.querySelectorAll('.input, .highlight').forEach((input) => {
   input.addEventListener('change', () => {
-    document.documentElement.style.setProperty(`--${input.name}`, `${input.value}${input.dataset.sizing}`)
+    document.documentElement.style.setProperty(`--${input.name}`, `${input.value}${input.dataset.sizing || ''}`)
   })
 })
 
 document.querySelector('.highlight').addEventListener('mousemove', () => {
   const color = document.querySelector('.highlight')
-  document.documentElement.style.setProperty(`--${color.name}`, `${color.value}`)
+  document.documentElement.style.setProperty(`--${color.name}`, `${color.value}${color.dataset.sizing || ''}`)
 })
 
 window.addEventListener('DOMContentLoaded', () => {
