@@ -1,8 +1,16 @@
 document.querySelectorAll('.input').forEach((input) => {
   input.addEventListener('change', () => {
-    document.documentElement.style.setProperty(`--${input.name}`, `${input.value}${input.dataset.sizing || ''}`)
+    document.documentElement.style.setProperty(`--${input.name}`, `${input.value}${input.dataset.sizing}`)
   })
-  input.addEventListener('mousemove', () => {
+})
+
+document.querySelector('.highlight').addEventListener('mousemove', () => {
+  const color = document.querySelector('.highlight')
+  document.documentElement.style.setProperty(`--${color.name}`, `${color.value}`)
+})
+
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.input, .highlight').forEach((input) => {
     document.documentElement.style.setProperty(`--${input.name}`, `${input.value}${input.dataset.sizing || ''}`)
   })
 })
